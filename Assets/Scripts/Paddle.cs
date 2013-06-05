@@ -21,7 +21,11 @@ public class Paddle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetAxisRaw ("Horizontal") != 0) { 
-			_t.position = new Vector3(_t.position.x + Input.GetAxisRaw ("Horizontal")*step_speed*Time.deltaTime, 0,z_offset);
+			if (Input.GetAxisRaw ("Horizontal") < 0) {
+				_t.position = new Vector3(_t.position.x - step_speed*Time.deltaTime, 0,z_offset);
+			} else {
+				_t.position = new Vector3(_t.position.x + step_speed*Time.deltaTime, 0,z_offset);
+			}
 		} 
 		
 		float offset = wall_width/2 + _t.localScale.x/2;
