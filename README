@@ -1,0 +1,9 @@
+ For my additional feature I decided to take advantage of the other view and allow the user to fire a gun from the point of view of the paddle. You can only fire the gun from a paddle camera, so there is an added challege of having to go back and forth.
+
+ It was a bit boring with the laser so i decided to have the blocks fall after you hit them. Then its a bit more callenging to hit them with the ball or laser. (They also mess up the balls direction a bit).
+
+ With the laser I added a simple sound effect I found online to give it a cool sound.
+
+ I spent a lot of time working with textures as well. My design skills aren't great, but the brick borders give it a nice look.
+
+ The last big improvmenet is the logic for how the ball bounces. In the old version it would get stuck on edges, now it travels much more like the game of breakout. I also tried to have it work like breakout where depending on where on the paddle you hit the ball it'll add a bit more angle allowing a skilled player to actually control where the ball goes. It's not perfect, but it's decent.
